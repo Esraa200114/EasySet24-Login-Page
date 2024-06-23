@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'poppins';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* The body will take up the entire height of the user's browser window */
+    background-color: #F9F9F9;
+    overflow: hidden;
+    font-family: poppins;
+}
+
+/* Sections Styles */
+.header-section {
+    border-bottom: 1px solid #A6A6A6;
+}
+
+.login-form-section {
+    flex: 1; /* This section will acquire the remaining space left from the body after the header-section */
+}
+
+.form-content {
+    background-color: #EFEFEF;
+    border-radius: 16px;
+    border: 1px solid #A6A6A6;
+}
+
+/* Header Styles */
+.logo-title {
+    color: #07689F;
+}
+
+#logo-image, #england-icon, #help-icon {
+    cursor: pointer;
+}
+
+/* Shared Font Styles */
+.login-form-header-title,
+.login-form-header-subtitle,
+label[for="email-address"],
+input[id="email-address"],
+label[for="password"],
+input[id="password"] {
+    color: #000000;
+}
+
+.login-form-header-subtitle {
+    font-size: 12px;
+}
+
+/* Input Styles */
+input[id="email-address"],
+input[id="password"] {
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #A6A6A6;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Password Group Styles */
+.password-group {
+    position: relative;
+}
+
+#toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #07689F;
+}
+
+/* Remember Me Label Style */
+label[for="remember-me-checkbox"] {
+    color: #112211;
+    font-size: 14px;
+}
+
+/* Link Styles */
+a {
+    color: #07689F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Login Button Styles */
+.login-btn {
+    background-color: #07689F;
+    color: #FFFFFF;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.login-btn:hover {
+    background-color: #d9d9d9;
+    color: #FFFFFF;
+}
+
+/* Social Media Item Styles */
+.social-media-item {
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+/* Register Link Styles */
+.register-link,
+.register-link a {
+    font-size: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 420px) {
+    .custom-checkbox-group div {
+        white-space: nowrap;
+    }
+
+    .custom-checkbox-group a {
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .custom-checkbox-group {
+        gap: 3rem;
+    }
+}
