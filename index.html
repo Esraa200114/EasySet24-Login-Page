@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+    <link rel="icon" href="assets/images/Vector.png" type="image/x-icon">
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Login Header -->
+    <section class="header-section">
+        <div class="container">
+            <header class="d-flex justify-content-between align-items-center p-2">
+
+                <!-- Logo -->
+                <div class="text-center">
+                    <img id="logo-image" src="assets/images/Vector.png" width="47px" height="44px" alt="EasySet24 logo">
+                    <p class="logo-title fw-bold fs-6 lh-base m-0">EasySet 24</p>
+                </div>
+
+                <!-- Language & Help Icons -->
+                <div class="d-flex gap-4 p-1 align-items-center">
+                    <img id="england-icon" src="assets/images/England.png" width="24px" height="24px"
+                        alt="English language icon">
+                    <img id="help-icon" src="assets/images/help.png" width="24px" height="24px" alt="Help icon">
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <!-- Login Form Section -->
+    <section class="login-form-section d-flex justify-content-center align-items-center">
+        <div class="container d-md-flex justify-content-md-center align-items-md-center my-4 my-md-3 my-lg-2 my-xl-1">
+            <div class="form-content row p-5 m-2">
+
+                <!-- Left Side Image -->
+                <div class="col-lg-5 col-md-6 d-none d-md-flex justify-content-md-center align-items-md-center">
+                    <img class="img-fluid " width="516px" height="709px" src="assets/images/travel photo.png"
+                        alt="Travel Image">
+                </div>
+
+                <!-- Right Side Form -->
+                <div class="col-lg-7 col-md-6 d-md-flex align-items-md-center justify-content-md-center">
+                    <div class="d-flex flex-column gap-2">
+
+                        <!-- Form Header -->
+                        <header>
+                            <p class="login-form-header-title fs-5 fw-bold lh-base mb-3">Login</p>
+                            <p class="login-form-header-subtitle fw-normal mb-1 lh-1">Login to access your Easyset24
+                                account
+                            </p>
+                        </header>
+
+                        <!-- Email Address Field -->
+                        <div>
+                            <label for="email-address"
+                                class="form-label mb-0 pt-1 pe-2 pb-1 ps-0 fw-normal lh-sm">Email</label>
+                            <input id="email-address" type="email"
+                                class="form-control form-control-lg pe-2 ps-2 fw-normal"
+                                placeholder="Easyset24@Gmail.Com">
+                        </div>
+
+                        <!-- Password Field -->
+                        <div>
+                            <label for="password"
+                                class="form-label mb-0 pt-1 pe-2 pb-1 ps-0 fw-normal lh-sm">Password</label>
+                            <div class="password-group">
+                                <input id="password" type="password"
+                                    class="form-control form-control-lg pe-2 ps-2 fw-normal"
+                                    placeholder="•••••••••••••••">
+                                <img class="img-fluid" id="toggle-password" src="assets/images/preview-close-one.png"
+                                    alt="Show password">
+                            </div>
+                        </div>
+
+                        <!-- Remember Me Checkbox & Forgot Password Link -->
+                        <div class="custom-checkbox-group d-flex justify-content-between align-items-center my-1">
+                            <div>
+                                <input type="checkbox" class="form-check-input m-0" id="remember-me-checkbox">
+                                <label class="form-check-label fw-normal lh-sm ms-1" for="remember-me-checkbox">
+                                    Remember Me
+                                </label>
+                            </div>
+
+                            <a href="#" class="d-inline-block fw-normal lh-sm">Forgot Password?</a>
+                        </div>
+
+                        <!-- Login Button -->
+                        <div>
+                            <button type="submit" class="btn btn-lg w-100 fs-6 lh-base login-btn">Login</button>
+                        </div>
+
+                        <!-- Or Text -->
+                        <div class="text-center my-1">
+                            <p class="Or-text mx-auto fw-normal lh-sm m-0">Or</p>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="d-inline-block social-media-item pt-2 pe-2 pb-2 ps-2">
+                                <img src="assets/images/Facebook.png" width="24px" height="24px" alt="Facebook icon">
+                            </a>
+                            <a href="#" class="d-inline-block social-media-item pt-2 pe-2 pb-2 ps-2">
+                                <img src="assets/images/Apple.png" width="24px" height="24px" alt="Facebook icon">
+                            </a>
+                            <a href="#" class="d-inline-block social-media-item pt-2 pe-2 pb-2 ps-2">
+                                <img src="assets/images/Google.png" width="24px" height="24px" alt="Facebook icon">
+                            </a>
+                        </div>
+
+                        <!-- Register Link -->
+                        <div class="register-link fw-normal lh-1 text-center mt-2">
+                            <p>Don't have an account in EasySet24 yet? <a href="#"
+                                    class="text-decoration-none">Register</a>!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggle_password_img = document.querySelector('#toggle-password');
+        toggle_password_img.addEventListener('click', () => {
+            const password_input = document.querySelector('#password');
+            password_input.type = password_input.type === 'password' ? 'text' : 'password';
+        });
+    </script>
+</body>
+
+</html>
